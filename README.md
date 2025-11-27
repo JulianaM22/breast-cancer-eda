@@ -9,7 +9,7 @@ second in overall incidence and remained the most common cause of cancer death i
 United States specifically, breast cancer is the second leading cause of cancer death among women, only
 after lung cancer (CDC, 2025).<br>
 This project performs exploratory data analysis on breast cancer cell data to identify patterns and features related to malignant vs. benign tumors using Python visualizations and statistical techniques.<br>
-Our goals are to:<br>
+<b>Our goals are to:</b><br>
 a) Quantify how malignancy rates vary with age and tumor characteristics<br>
 b)​ Identify which features most strongly distinguish malignant from benign tumors<br>
 c)​ Visualize trends with distribution plots and partial dependence views<br>
