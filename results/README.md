@@ -1,2 +1,0 @@
-# breast-cancer-eda
-This project performs exploratory data analysis on breast cancer cell data to identify patterns and features related to malignant vs. benign tumors using Python visualizations and statistical techniques.
