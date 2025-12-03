@@ -1,3 +1,4 @@
+
 <div align="center"> 
   <img src="other_resources/UCSD_logo.svg" width="30%" />
 </div>
@@ -72,138 +73,122 @@ BREAST-CANCER-EDA-MAIN/
 │
 ├── README.md
 └── .gitignore
+````
 
-
+---
 
 ## Core Modules
 
 ### `data_loader.py`
-- Centralized dataset loading  
-- Standardized paths for raw and cleaned versions  
+
+* Centralized dataset loading
+* Standardized paths for raw and cleaned versions
 
 ### `data_preprocessor.py`
-- Type corrections, label cleaning, missing value handling  
-- Z-score normalization  
-- Dataset-specific preprocessing logic  
+
+* Type corrections, label cleaning, missing value handling
+* Z-score normalization
+* Dataset-specific preprocessing logic
 
 ### `visualizer.py`
-Provides all EDA and modeling visualizations, including:
-- Class distribution  
-- KDE + histogram overlays  
-- Boxplots & violin plots  
-- Correlation heatmaps  
-- Mutual information & ANOVA F-test  
-- Random Forest feature importance  
-- SHAP interpretability  
-- Dataset-specific wrappers (`plot_d1_*`, `plot_d2_*`, `plot_d3_*`)
+
+Provides the complete visualization suite:
+
+* Class distribution
+* KDE + histogram overlays
+* Boxplots & violin plots
+* Correlation heatmaps
+* Mutual information & ANOVA F-test
+* Random Forest feature importance
+* SHAP interpretability
+* Dataset-specific wrappers (`plot_d1_*`, `plot_d2_*`, `plot_d3_*`)
 
 ---
 
 ## Modeling (Dataset 3)
 
 Includes 10-fold cross-validated performance comparison for:
-- Logistic Regression  
-- KNN  
-- SVM  
-- Naive Bayes  
-- Decision Tree  
-- Random Forest  
-- Gradient Boosting  
 
-Also includes SHAP summary plots and Random Forest feature importance ranking.
+* Logistic Regression
+* KNN
+* SVM
+* Naive Bayes
+* Decision Tree
+* Random Forest
+* Gradient Boosting
+
+Also includes:
+
+* SHAP summary plots
+* Random Forest feature importance ranking
 
 ---
 
-How to Run the Project
-1. Install dependencies
+## How to Run the Project
+
+### 1. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-2. Run any notebook
+### 2. Launch the notebook environment
+
+```bash
 jupyter notebook
+```
+---
 
+## Third-Party Modules Used
 
-Recommended order:
+### Scientific Computing
 
-Dataset1_breast_cancer_wisconsin_original.ipynb
+* numpy
+* pandas
+* scipy
 
-Dataset2_Coimbra.ipynb
+### Visualization
 
-Dataset3_Breast Cancer Wisconsin (Diagnostic).ipynb
+* matplotlib
+* seaborn
 
-Breast_cancer_EDA_final.ipynb
+### Machine Learning (scikit-learn)
 
-3. Use project modules in Python
-from src.data_loader import load_dataset1_raw
-from src.data_preprocessor import clean_dataset1
-from src.visualizer import plot_d1_heatmap
+* Logistic Regression
+* KNN
+* SVM
+* Naive Bayes
+* Decision Tree
+* Random Forest
+* Gradient Boosting
+* StandardScaler
+* StratifiedKFold
+* train_test_split
 
-##  Third-Party Modules Used
-Scientific computing
+### Model Interpretability
 
-numpy
+* shap
 
-pandas
+### Utilities
 
-scipy
+* tabulate
 
-Visualization
+*All dependencies are included in `requirements.txt`.*
 
-matplotlib
+---
 
-seaborn
+## Major Features Implemented
 
-Machine learning
+* Unified preprocessing pipeline
+* Class distribution plots
+* KDE / distribution plots
+* Boxplots & violin plots
+* Correlation heatmaps
+* Outlier visualization
+* Mutual Information + ANOVA scoring (Dataset 2)
+* Random Forest feature importance
+* SHAP global interpretability (Dataset 3)
+* 10-fold model comparison for Dataset 3
 
-scikit-learn
+---
 
-Logistic Regression
-
-KNN
-
-SVM
-
-Naive Bayes
-
-Decision Tree
-
-Random Forest
-
-Gradient Boosting
-
-StandardScaler
-
-StratifiedKFold
-
-train_test_split
-
-Model interpretability
-
-shap
-
-Utilities
-
-tabulate
-
-All dependencies are included in requirements.txt.
-
-##  Major Features Implemented
-
-Unified preprocessing pipeline
-
-Class distribution plots
-
-KDE/distribution plots
-
-Boxplots & violin plots
-
-Correlation heatmaps
-
-Outlier visualization
-
-Mutual Information + ANOVA scoring (Dataset 2)
-
-Random Forest feature importance
-
-SHAP global interpretability (Dataset 3)
-
-10-fold model comparison for Dataset 3
