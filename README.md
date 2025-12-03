@@ -114,8 +114,96 @@ Also includes SHAP summary plots and Random Forest feature importance ranking.
 
 ---
 
-## How to Run
-
-### Install dependencies:
-```bash
+How to Run the Project
+1. Install dependencies
 pip install -r requirements.txt
+
+2. Run any notebook
+jupyter notebook
+
+
+Recommended order:
+
+Dataset1_breast_cancer_wisconsin_original.ipynb
+
+Dataset2_Coimbra.ipynb
+
+Dataset3_Breast Cancer Wisconsin (Diagnostic).ipynb
+
+Breast_cancer_EDA_final.ipynb
+
+3. Use project modules in Python
+from src.data_loader import load_dataset1_raw
+from src.data_preprocessor import clean_dataset1
+from src.visualizer import plot_d1_heatmap
+
+##  Third-Party Modules Used
+Scientific computing
+
+numpy
+
+pandas
+
+scipy
+
+Visualization
+
+matplotlib
+
+seaborn
+
+Machine learning
+
+scikit-learn
+
+Logistic Regression
+
+KNN
+
+SVM
+
+Naive Bayes
+
+Decision Tree
+
+Random Forest
+
+Gradient Boosting
+
+StandardScaler
+
+StratifiedKFold
+
+train_test_split
+
+Model interpretability
+
+shap
+
+Utilities
+
+tabulate
+
+All dependencies are included in requirements.txt.
+
+##  Major Features Implemented
+
+Unified preprocessing pipeline
+
+Class distribution plots
+
+KDE/distribution plots
+
+Boxplots & violin plots
+
+Correlation heatmaps
+
+Outlier visualization
+
+Mutual Information + ANOVA scoring (Dataset 2)
+
+Random Forest feature importance
+
+SHAP global interpretability (Dataset 3)
+
+10-fold model comparison for Dataset 3
