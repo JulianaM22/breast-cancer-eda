@@ -8,70 +8,71 @@
 
 ## Overview
 
-Breast cancer is one of the most prevalent cancers among women worldwide and remains a leading cause of cancer-related mortality. According to WHO (2022), it ranks second in overall incidence globally and continues to be the most common cause of cancer death in women. In the United States, it is surpassed only by lung cancer (CDC, 2025).
+Breast cancer is one of the most prevalent cancers affecting women worldwide and remains a major contributor to cancer-related mortality. According to WHO (2022), it ranks second in global incidence and is the leading cause of cancer death among women. In the United States, it is surpassed only by lung cancer (CDC, 2025).
 
-This project performs an exploratory data analysis (EDA) across three breast cancer datasets to examine how clinical, biochemical, and morphological features relate to malignant versus benign tumors. Using Python-based statistical analysis and visualization techniques, we investigate key factors influencing malignancy.
+This project conducts exploratory data analysis (EDA) on three breast cancer datasets to investigate statistical, biochemical, and morphological factors associated with malignant versus benign tumors. Using Python-based visualizations and statistical techniques, we identify patterns and feature relationships relevant to malignancy.
 
 ### Goals
-- Quantify how malignancy rates vary with demographic and tumor characteristics  
-- Identify which features best distinguish malignant from benign cases  
-- Visualize trends using distribution plots, correlation maps, and model-based feature importance  
+- Examine how malignancy varies across demographic, metabolic, and morphological features  
+- Identify features that most effectively distinguish malignant from benign tumors  
+- Visualize data patterns through distribution plots, correlation maps, and model-based feature importance  
 
 ---
 
 ## Datasets Analyzed
 
 1. **Dataset 1 — Wisconsin Breast Cancer (Original)**  
-   Cytological FNA measurements (9 numeric features)
+   Cytological FNA cell measurements (9 features)
 
 2. **Dataset 2 — Coimbra Breast Cancer (Metabolic)**  
    Blood and metabolic biomarkers (10 features)
 
 3. **Dataset 3 — Wisconsin Breast Cancer (Diagnostic)**  
-   Imaging-based morphological and texture features (30 features)
+   Imaging-based morphology and texture features (30 features)
 
-All datasets undergo unified cleaning, normalization, and visualization through the project’s modular pipeline.
+All datasets follow unified cleaning, feature processing, and visualization pipelines.
 
 ---
 
 ## Repository Structure
 
+```txt
 BREAST-CANCER-EDA-MAIN/
 │
 ├── datasets/
-│ ├── cleaned_datasets/
-│ ├── normalized_datasets/
-│ ├── original_datasets/
-│ └── README.md
+│   ├── cleaned_datasets/
+│   ├── normalized_datasets/
+│   ├── original_datasets/
+│   └── README.md
 │
 ├── docs/
-│ ├── [Project Proposal] Malignant Breast Cancer Cells.pdf
-│ ├── Dataset1_breast_cancer_wisconsin_original.pdf
-│ ├── Dataset2_Coimbra.pdf
-│ ├── Dataset3_Breast Cancer Wisconsin (Diagnostic).pdf
+│   ├── [Project Proposal] Malignant Breast Cancer Cells.pdf
+│   ├── Dataset1_breast_cancer_wisconsin_original.pdf
+│   ├── Dataset2_Coimbra.pdf
+│   ├── Dataset3_Breast Cancer Wisconsin (Diagnostic).pdf
 │
 ├── notebooks/
-│ ├── Dataset1_breast_cancer_wisconsin_original.ipynb
-│ ├── Dataset2_Coimbra.ipynb
-│ ├── Dataset3_Breast Cancer Wisconsin (Diagnostic).ipynb
-│ └── Breast_cancer_EDA_final.ipynb
+│   ├── Dataset1_breast_cancer_wisconsin_original.ipynb
+│   ├── Dataset2_Coimbra.ipynb
+│   ├── Dataset3_Breast Cancer Wisconsin (Diagnostic).ipynb
+│   └── Breast_cancer_EDA_final.ipynb
 │
 ├── src/
-│ ├── data_loader.py
-│ ├── data_preprocessor.py
-│ ├── visualizer.py
-│ └── data_cleaning/
+│   ├── data_loader.py
+│   ├── data_preprocessor.py
+│   ├── visualizer.py
+│   └── data_cleaning/
 │
 ├── results/
-│ └── (auto-generated figures and model outputs)
+│   └── (auto-generated figures and model outputs)
 │
 ├── other_resources/
-│ └── UCSD_logo.svg
+│   └── UCSD_logo.svg
 │
 ├── README.md
 └── .gitignore
 
----
+
 
 ## Core Modules
 
