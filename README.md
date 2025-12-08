@@ -137,6 +137,12 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
+or
+
+```bash
+python breast_cancer_EDA_final.py
+```
+
 ---
 
 ## Third-Party Modules Used
