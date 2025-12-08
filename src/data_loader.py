@@ -27,3 +27,10 @@ def load_dataset3_raw(filepath):
     Load Dataset 3: Breast Cancer Wisconsin (Diagnostic)
     """
     return pd.read_csv(filepath)
+
+
+def load_dataset4_raw(filepath):
+    """
+    Load Dataset 3: CDC Wonder Cancer Statistics (Incidence, Age Groups)
+    """
+    return pd.read_csv(filepath)

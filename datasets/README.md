@@ -36,34 +36,7 @@
 
 ---
 
-## Dataset 2: Wisconsin Diagnostic
-**File:** `breast_cancer_wisconsin_diagnostic_cleaned.csv`
-
-### Details
-- **Rows:** 569 (no missing values)
-- **Features:** 30 continuous measurements
-- **Scale:** Various scales (NOT standardized - features range from 0 to 4000+)
-- **Target:** `diagnosis`
-
-### Target Variable
-- `diagnosis`: Binary (0=benign, 1=malignant)
-
-### Features (30 total)
-Features categorize (mean, standard error, worst) for 10 measurements:
-- **Measurements:** radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension
-
-### Diagnosis Distribution
-- Benign: ~63%
-- Malignant: ~37%
-
-### Cleaning Applied
-- Dropped `id` column and `Unnamed: 32` column 
-- Converted `diagnosis` from M/B to 1/0
-- Removed duplicates
-
----
-
-## Dataset 3: Coimbra
+## Dataset 2: Coimbra
 **File:** `breast_cancer_coimbra_cleaned.csv`
 
 ### Details
@@ -94,9 +67,57 @@ Features categorize (mean, standard error, worst) for 10 measurements:
 - Converted `Classification` from 1/2 to 0/1
 - Removed duplicates
 
+---
+
+## Dataset 3: Wisconsin Diagnostic
+**File:** `breast_cancer_wisconsin_diagnostic_cleaned.csv`
+
+### Details
+- **Rows:** 569 (no missing values)
+- **Features:** 30 continuous measurements
+- **Scale:** Various scales (NOT standardized - features range from 0 to 4000+)
+- **Target:** `diagnosis`
+
+### Target Variable
+- `diagnosis`: Binary (0=benign, 1=malignant)
+
+### Features (30 total)
+Features categorize (mean, standard error, worst) for 10 measurements:
+- **Measurements:** radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension
+
+### Diagnosis Distribution
+- Benign: ~63%
+- Malignant: ~37%
+
+### Cleaning Applied
+- Dropped `id` column and `Unnamed: 32` column 
+- Converted `diagnosis` from M/B to 1/0
+- Removed duplicates
+
+## Dataset 4: CDC WONDER Cancer Incidence
+**File:** `cancer_incidence_1999_2022_cleaned.csv`
+
+### Details
+- **Rows:** 352
+- **Features:** Age groups, year, incidence counts
+- **Scale:** Count data (integer values)
+- **Time Period:** 1999-2022
+- **Geographic Coverage:** United States
+
+### Features
+- **Age Groups**: Categorized (< 1 year, 10-14 years, 15-19 years, etc.)
+- **Year**: Calendar year of diagnosis
+- **Count**: Number of breast cancer cases
+
+### Cleaning Applied
+- Dropped `Notes`, `Year Code`, `Age Groups Code` columns
+- Removed nulls
+
+
 ### Original Sources
 - **Dataset 1:** [Wisconsin Original](https://www.kaggle.com/datasets/mariolisboa/breast-cancer-wisconsin-original-data-set)
-- **Dataset 2:** [Wisconsin Diagnostic](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
-- **Dataset 3:** [Coimbra](https://www.kaggle.com/datasets/atom1991/breast-cancer-coimbra)
+- **Dataset 2:** [Coimbra](https://www.kaggle.com/datasets/atom1991/breast-cancer-coimbra)
+- **Dataset 3:** [Wisconsin Diagnostic](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+- **Dataset 4:** [CDC WONDER](https://wonder.cdc.gov/)
 
-**Last Updated:** 11/25/2025
+**Last Updated:** 12/7/2025

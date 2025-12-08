@@ -89,6 +89,22 @@ def clean_dataset3(df):
 
     return df
 
+# -----------------------------
+# Dataset 4 Cleaning
+# -----------------------------
+def clean_dataset4(df):
+    """
+    Clean Dataset 4 (CDC Wonder Cancer Statistics)
+    Columns:
+        notes, year, year code, age groups, age groups code, count
+    """
+
+    df = df.dropna(subset=['Year', 'Count'])
+
+    cols_to_drop = ['Notes', 'Year Code', 'Age Groups Code']
+    df = df.drop(columns=[c for c in cols_to_drop if c in df.columns])
+
+    return df
 
 # -----------------------------
 # Standardization Utility
